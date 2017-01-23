@@ -2,4 +2,7 @@
 
 set -e
 
-npm run lint
+NODE_ENV=mock
+
+npm run unit
+npm run e2e

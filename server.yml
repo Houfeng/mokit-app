@@ -1,8 +1,7 @@
-port: 8002
 filters:
     ^/: 'nokit-filter-proxy'
 public: 
-      ^/: './'
+      ^/: './build/dist'
 cache: 
     enabled: false
 log:

@@ -7,8 +7,10 @@ scripts/
 docs/
 test/
 examples/
+build/coverage/
 .babelrc
 .eslintrc.yml
 .travis.yml
 server.yml
+server.local.yml
 webpack.config.js
