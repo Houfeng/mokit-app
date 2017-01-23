@@ -37,12 +37,7 @@ module.exports = function (config) {
         loaders: webpackConfig.module.loaders
       },
       plugins: webpackConfig.plugins,
-      resolve: webpackConfig.resolve,
-      vue: {
-        loaders: {
-          js: 'isparta-instrumenter'
-        }
-      }
+      resolve: webpackConfig.resolve
     },
     webpackServer: {
       noInfo: true
