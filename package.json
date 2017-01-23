@@ -14,8 +14,7 @@
     "dev": "./bin/watch.sh",
     "unit": "./bin/unit.sh",
     "e2e": "./bin/e2e.sh",
-    "test": "./bin/test.sh",
-    "prepublish": "./bin/prepublish.sh"
+    "test": "./bin/test.sh"
   },
   "author": "",
   "license": "MIT",
