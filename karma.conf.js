@@ -32,7 +32,7 @@ module.exports = function (config) {
         preLoaders: [{
           test: /\.js$/,
           exclude: [/node_modules/, /\.test\.js$/, /mocks/],
-          loader: 'isparta-instrumenter'
+          loader: 'isparta'
         }],
         loaders: webpackConfig.module.loaders
       },
