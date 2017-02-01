@@ -3,21 +3,17 @@ require('./assets/common.less');
 const mokit = require('mokit');
 const Router = require('mokit-router');
 const Touch = require('mokit-touch');
-const Hello = require('./components/hello');
+const Frame = require('./pages/frame');
 
 mokit.use(Router);
 mokit.use(Touch);
 
-const app = mokit({
-  element: document.querySelector('.app'),
-  components: {
-    Hello
-  },
-  data() {
-    return {
-      name: 'mokit'
-    };
-  }
+var router = new mokit.Router();
+
+router.map({
+  '/': '/home',
+  '/home': require('./pages/home'),
+  '/about': require('./pages/about')
 });
 
-app.start();
+router.start(Frame, document.body);
